@@ -363,13 +363,6 @@ template {
 
 :root {
   --body-font: 'Roboto', sans-serif;
-
-  --main-font: 'Source Sans Pro', sans-serif;
-  --secondary-font: 'Herr Von Muellerhoff', cursive;
-  --body-font: 'Cabin', sans-serif;
-  --main-font-color-dark: #252525;
-  --secondary-font-color: #c59d5f;
-  --body-font-color: #515151;
   --green-color: #4B9200;
   --yellow-color: #FFEE2E;
   --red-color: #D31414;
@@ -393,13 +386,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  width: 100%;
-  max-width: 1600px;
-  margin-inline: auto;
-  background: #E5E5E5;
-}
-
 section {
   padding: 3.9rem;
 }
@@ -421,6 +407,63 @@ p {
   width: 100%; /* when the width is smaller than 122.5rem it will be 100% */
   max-width: 116rem; /* 116rem == 1160px */
   margin: 0 auto;
-  padding: 0 2.4rem;
+  /* padding: 0 2.4rem; no yet */
 }
 
+header {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+header .header-wrapper {
+  display: flex;
+  height: 8rem;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+header .header-wrapper a {
+  color: white;
+  line-height: 140%;
+  transition: background 0.3s ease ;
+}
+
+header .header-wrapper a.active {
+  background: var(--orange-bg-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+header .header-wrapper a:hover {
+  background: var(--orange-bg-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+header .header-wrapper .logo {
+  margin-right: 6.3rem;
+}
+
+header .header-wrapper .logo img {
+  width: 8.2rem;
+  height: 5.2rem;
+}
+
+header .header-wrapper .nav-bar {
+  margin-right: auto;
+}
+
+header .header-wrapper .nav-bar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 5.8rem;
+  color: white;
+}
