@@ -410,6 +410,8 @@ p {
   /* padding: 0 2.4rem; no yet */
 }
 
+/* === header start === */
+
 header {
   height: 8rem;
   display: flex;
@@ -467,3 +469,7 @@ header .header-wrapper .nav-bar ul {
   gap: 5.8rem;
   color: white;
 }
+
+/* === header done === */
+
+/* === hero start === */
