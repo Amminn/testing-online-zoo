@@ -430,28 +430,39 @@ header .header-wrapper a {
 }
 
 header .header-wrapper a.active {
-  background: var(--orange-bg-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+  color: var(--orange-color);
 }
 
-header .header-wrapper a:hover {
-  background: var(--orange-bg-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
+header .header-wrapper a:hover:not(.logo-link) {
+  color: var(--orange-color);
 }
 
 header .header-wrapper .logo {
   margin-right: 6.3rem;
-}
-
-header .header-wrapper .logo img {
   width: 8.2rem;
   height: 5.2rem;
+  border: 1px solid white;
+  padding: 0.35rem 0.475rem;
+  border-radius: 0.2rem;
+  position: relative;
+}
+
+header .header-wrapper .logo::after {
+  content: '';
+  width: 15.03px;
+  height: 30.98px;
+  background: url('../../assests/images/bamboo.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 13.23px;
+  top: 24.64px;
+}
+
+header .header-wrapper .logo h1 {
+  font-weight: 400;
+  font-size: 19.0145px;
+  line-height: 23px;
+  text-align: center;
 }
 
 header .header-wrapper .nav-bar {
