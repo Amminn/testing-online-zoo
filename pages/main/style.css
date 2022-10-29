@@ -355,6 +355,7 @@ template {
 :root {
   --body-font: 'Roboto', sans-serif;
   --green-color: #4B9200;
+  --orange-color: #F9804B;
   --yellow-color: #FFEE2E;
   --red-color: #D31414;
   --black-blue-color: #333B41;
@@ -375,6 +376,11 @@ html {
   font-size: 10px; /* 1rem = 10px */
   color: var(--black-blue-color);
   scroll-behavior: smooth;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -464,22 +470,23 @@ header .header-wrapper .nav-bar ul {
 /* === hero start === */
 
 section.hero {
-  margin-top: -8rem;
+  margin-top: -8.1rem;
   margin-inline: auto;
   padding: 0;
   background-image: url('../../assests/images/Giant-Panda.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   z-index: -0;
-  width: 100%;
-  max-width: 1600px;
 }
 
-.hero-wrapper {
+.hero .hero-wrapper {
   min-height: 780px;
   position: relative;
 }
 
-.hero-wrapper .circle {
+.hero .hero-wrapper .circle {
   width: 465px;
   height: 465px;
   position: absolute;
@@ -496,10 +503,10 @@ section.hero {
   max-width: 8ch;
   font-size: 10.65rem;
   font-weight: 700;
-  line-height: 79.87px;
+  line-height: 80px;
   position: absolute;
-  right: 0;
-  top: 166px;
+  right: 5px;
+  top: 165px;
   margin-bottom: 6rem;
 }
 
@@ -514,15 +521,86 @@ section.hero {
   left: calc(50% - 298px/2 + 332px);
   top: 626px;
   font-weight: 500;
-  background: var(--orange-bg-color);
+  background: var(--orange-color);
   color: white;
   text-transform: uppercase;
   font-size: 1.6rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .hero-wrapper button:hover {
   background: #E47209;
 }
+
+/* hero section done */
+
+/* backstage section start */
+
+.backstage-of-the-wilderness {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10rem 0 10rem;
+  display: flex;
+  justify-content: center;
+}
+
+.backstage-of-the-wilderness .hero-wrapper {
+  /* background-color: red; */
+  position: relative;
+}
+
+.backstage-of-the-wilderness .hero-wrapper .plam{
+  position: absolute;
+  background-color: #4B9200;
+  width: 293px;
+  height: 605px;
+  right: -310px;
+  top: -89px;
+  background: url('../../assests/images/flower_foto1.png');
+  background-repeat: no-repeat;
+}
+
+.backstage-of-the-wilderness .hero-wrapper {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 8.7rem;
+}
+
+.backstage-of-the-wilderness .hero-wrapper__img {
+  min-width: 609px;
+  width: 100%;
+}
+
+.hero-wrapper__info-top {
+  margin-bottom: 5.45rem;
+}
+
+.hero-wrapper__info h2 {
+  font-size: 4.8rem;
+  font-weight: 400;
+  line-height: 57.6px;
+  margin-bottom: 2rem;
+  color: var(--black-blue-color);
+}
+
+.hero-wrapper__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.hero-wrapper__info h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 3.4rem;
+}
+
+.hero-wrapper__info-bottom p {
+  line-height: 22px;
+}
+
