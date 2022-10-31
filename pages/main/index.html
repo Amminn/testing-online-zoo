@@ -24,11 +24,9 @@
             <li><a href="#">Zoos</a></li>
             <li><a href="../donate/index.html">Donate</a></li>
             <li><a href="#">Contact us</a></li>
+            <li class="call-to-action" ><a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by ©</a></li>
           </ul>
         </nav>
-        <div class="call-to-action">
-          <a href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online" target="_blank">Designed by ©</a>
-        </div>
       </div>
     </div>
   </header>
@@ -196,7 +194,7 @@
             </p>
             <p class="info-square__small-paragraph">
               Even though the zoo has reopened, we need you now more than ever to help us deal with these problems. Please consider <br> a gift to our
-              <span class="fake-link">Emergency Support Fund</span>.
+              <a class="fake-link" href="../donate/index.html">Emergency Support Fund</a>.
             </p>
           </div>
 
@@ -228,7 +226,7 @@
             </div>
 
           </div>
-          <button>Feed a friend now</button>
+          <button onclick="window.location.href = '../donate/index.html';">Feed a friend now</button>
         </div>
 
       </div>
@@ -304,6 +302,7 @@
       </div>
     </section>
   </main>
+
   <footer class="footer">
     <div class="container">
       <div class="top-footer">
@@ -315,8 +314,8 @@
         <div class="email">
           <h3>Subscribe to our news</h3>
           <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button>Submit</button>
+            <input id="emailInput" type="email" placeholder="Enter your email" required>
+            <button id="submitButton" class="mistake">Submit</button>
           </form>
         </div>
       </div>
@@ -327,25 +326,25 @@
 
         <div class="bottom-footer">
           <div class="left">
-            <a href="header">
+            <a href="https://facebook.com" target="_blank">
               <div class="img">
                 <i class="ri-facebook-fill"></i>
               </div>
               facebook
             </a>
-            <a href="">
+            <a href="https://twitter.com" target="_blank">
               <div class="img">
                 <i class="ri-twitter-fill"></i>
               </div>
               Twitter
             </a>
-            <a href="">
+            <a href="https://www.instagram.com" target="_blank">
               <div class="img">
                 <i class="ri-instagram-line"></i>
               </div>
               Instagram
             </a>
-            <a href="">
+            <a href="https://www.youtube.com" target="_blank">
               <div class="img">
                 <i class="ri-youtube-fill"></i>
               </div>
@@ -355,23 +354,21 @@
 
           <div class="middle">
             <nav>
-              <li><a class="active" href="#header">About</a></li>
-              <li><a href="#">Map</a></li>
-              <li><a href="#">Zoos</a></li>
-              <li><a href="../donate/index.html">Donate</a></li>
-              <li><a href="#">Contact us</a></li>
+              <ul>
+                <li><a class="active" href="#header">About</a></li>
+                <li><a href="#">Map</a></li>
+                <li><a href="#">Zoos</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
             </nav>
           </div>
 
           <div class="right">
-            <p>
-              Designed by Alisa Samborskaya <br>
-              ©RSSchool & ©Yem Digital 2021
-            </p>
+            <p>Designed by Alisa Samborskaya</p>
+            <p>©RSSchool & ©Yem Digital 2021</p>
           </div>
         </div>
     </div>
-    <p>test</p>
   </footer>
 
   <script src="./script.js"></script>
