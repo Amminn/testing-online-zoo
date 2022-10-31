@@ -623,7 +623,7 @@ section.hero {
   width: 100%;
   max-width: 1600px;
   /* overflow: hidden; */
-  margin: 3.7rem auto 0;
+  margin: 3.7rem auto 2.3rem;
   padding: 4rem 0 7.7rem;
   position: relative;
 }
@@ -792,3 +792,147 @@ section.hero {
   background: var(--green-color);
 }
 
+/* === pets ends === */
+
+/* === pick feed start === */
+
+.pick-feed {
+  padding: 69px 0 100px;
+  background: var(--orange-bg-color);
+  min-height: 1004px;
+}
+
+.pick-feed .info-square {
+  padding: 4.1rem 0rem 5.9rem;
+  margin-inline: auto;
+  min-height: 835px;
+  width: 1160px;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+}
+
+.pick-feed .info-square .left-push {
+  margin-left: 9.9rem;
+}
+
+.pick-feed .info-square__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: var(--orange-color);
+  margin-bottom: 3rem;
+}
+
+.pick-feed .info-square h3 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 4rem;
+}
+
+.pick-feed .info-square p strong {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--black-blue-color);
+}
+
+.pick-feed .info-square p {
+  margin-bottom: 1rem;
+}
+
+.pick-feed .info-square .info-square__small-paragraph {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 6rem;
+}
+
+.pick-feed .info-square .info-square__small-paragraph .fake-link {
+  border-bottom: 3px solid var(--orange-color);
+}
+
+.pick-feed .info-square .info-square__h3-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 47px;
+  color: var(--black-blue-color);
+  margin-bottom: 4rem;
+}
+
+.pick-feed .images-wrapper {
+  margin-inline: auto;
+  width: 764px;
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+  margin-bottom: 5.3rem;
+}
+
+.pick-feed .images-wrapper .element {
+  width: 168px;
+}
+
+.pick-feed .images-wrapper .element p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px
+}
+
+.pick-feed .images-wrapper .image-square {
+  width: 168px;
+  height: 168px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--orange-color);
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+
+.pick-feed .images-wrapper .image-square .first {
+  width: 108px;
+  height: 60px;
+}
+
+.pick-feed .images-wrapper .image-square .second {
+  width: 86px;
+  height: 95px;
+}
+
+.pick-feed .images-wrapper .image-square .third {
+  width: 124px;
+}
+
+.pick-feed .images-wrapper .arrow-img {
+  width: 69px;
+  height: 35.08px;
+  margin-top: 6rem;
+}
+
+.pick-feed button {
+  display: block;
+  width: 298px;
+  height: 54px;
+  margin-inline: auto;
+  border-radius: 25px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: var(--orange-color);
+  border: none;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.pick-feed button:hover {
+  background-color: #E47209;
+}
+
+.pick-feed button:active {
+  background-color: var(--green-color);
+}
